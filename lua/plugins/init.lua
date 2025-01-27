@@ -14,6 +14,17 @@ return {
   },
 
   {
+    "tpope/vim-fugitive",
+  },
+
+  {
+    "lewis6991/gitsigns.nvim",
+    config = function()
+      require "configs.gitsigns"
+    end,
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = {
