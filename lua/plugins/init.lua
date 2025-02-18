@@ -5,7 +5,6 @@ return {
     opts = require "configs.conform",
   },
 
-  -- These are some examples, uncomment them if you want to see them work!
   {
     "neovim/nvim-lspconfig",
     config = function()
@@ -15,6 +14,7 @@ return {
 
   {
     "tpope/vim-fugitive",
+    lazy = false,
   },
 
   {
@@ -23,7 +23,6 @@ return {
       require "configs.gitsigns"
     end,
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -36,7 +35,7 @@ return {
         "cpp",
         "c",
       },
-      highlight = { enable = true, additional_vim_regex_highlighting = false },
+      highlight = { enable = true, additional_vim_regex_highlighting = true },
     },
   },
 }
