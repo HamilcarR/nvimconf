@@ -45,7 +45,7 @@ M.base46 = {
       },
 
       base_16 = {
-        base00 = "#222122",
+        base00 = "#111011",
         base01 = "#3f2c2b",
         base02 = "#393635",
         base03 = "#43A03f",
@@ -65,7 +65,6 @@ M.base46 = {
     },
   },
   theme = "chocolate",
-
   hl_override = {
     ["@comment"] = { italic = true, fg = "#6A8759" },
     ["@function"] = { fg = "#AF6F00", italic = true },

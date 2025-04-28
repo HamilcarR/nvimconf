@@ -63,14 +63,13 @@ lspconfig.clangd.setup {
   cmd = {
     "clangd",
     "--clang-tidy",
-    "--compile-commands-dir=" .. vim.fn.getcwd(),
     "--completion-style=detailed",
     "--header-insertion=iwyu",
     "--enable-config",
-    "--background-index",
     "--pch-storage=memory",
+    "--log=verbose",
   },
-  filetypes = { "c", "cpp", "objc", "objcpp", "cu" },
+  filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
 }
 
 lspconfig.ts_ls.setup {
